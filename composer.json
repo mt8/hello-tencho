@@ -1,0 +1,19 @@
+{
+    "name": "mt8/hello-tencho",
+    "description": "This is not just a plugin, it symbolizes the hope and enthusiasm of an entire generation summed up in two words said most famously by Motohachi Tencho: Hello, Tencho. When activated you will randomly see a lyric from <cite>Hello, Tencho</cite> in the upper right of your admin screen on every page.",
+    "type": "wordpress-plugin",
+    "require-dev": {
+        "dealerdirect/phpcodesniffer-composer-installer": "^0.7.1",
+        "phpcompatibility/phpcompatibility-wp": "^2.1",
+        "squizlabs/php_codesniffer": "^3.6",
+        "wp-coding-standards/wpcs": "^2.3",
+        "wp-phpunit/wp-phpunit": "^5.8",
+        "phpunit/phpunit": "^8.5"
+    },
+    "scripts": {
+      "test": "phpunit",
+      "format": "phpcbf --standard=./.phpcs.xml.dist --report-summary --report-source",
+      "lint": "phpcs --standard=./.phpcs.xml.dist",
+      "phpcs": "phpcs --standard=./.phpcs.xml.dist"
+    }
+}
