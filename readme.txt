@@ -1,13 +1,13 @@
-=== Hello Dolly ===
-Contributors: matt, wordpressdotorg
-Stable tag: 1.7.2
-Tested up to: 5.5
-Requires at least: 4.6
+=== Hello Tencho ===
+Contributors: mt8biz
+Stable tag: 1.0.0
+Tested up to: 5.8
+Requires at least: 4.7
 
-This is not just a plugin, it symbolizes the hope and enthusiasm of an entire generation summed up in two words sung most famously by Louis Armstrong.
+This is not just a plugin, it symbolizes the hope and enthusiasm of an entire generation summed up in two words said most famously by Motohachi Tencho: Hello, Tencho. When activated you will randomly see a lyric from <cite>Hello, Tencho</cite> in the upper right of your admin screen on every page.
 
 == Description ==
 
-This is not just a plugin, it symbolizes the hope and enthusiasm of an entire generation summed up in two words sung most famously by Louis Armstrong: Hello, Dolly. When activated you will randomly see a lyric from <cite>Hello, Dolly</cite> in the upper right of your admin screen on every page.
+This is not just a plugin, it symbolizes the hope and enthusiasm of an entire generation summed up in two words said most famously by Motohachi Tencho: Hello, Tencho. When activated you will randomly see a lyric from <cite>Hello, Tencho</cite> in the upper right of your admin screen on every page.
 
-Thanks to Sanjib Ahmad for the artwork.
+Fork from Hello Dolly
