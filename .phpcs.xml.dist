@@ -10,6 +10,7 @@
 	<rule ref="vendor/humanmade/coding-standards">
 		<exclude name="HM.Files.FunctionFileName.WrongFile" />
 		<exclude name="HM.Files.NamespaceDirectoryName" />
+		<exclude name="HM.Files.ClassFileName.MismatchedName" />
 		<exclude name="WordPress.WP.CapitalPDangit.Misspelled" />
 		<exclude name="Squiz.Commenting.InlineComment.InvalidEndChar" />
 		<exclude name="Generic.Commenting.DocComment.LongNotCapital" />
@@ -22,6 +23,8 @@
 		<exclude name="Generic.Commenting.DocComment.ParamNotFirst" />
 		<exclude name="Squiz.Commenting.FileComment.PackageTagOrder" />
 		<exclude name="Squiz.Commenting.FileComment.SubpackageTagOrder" />
+		<exclude name="WordPress.Files.FileName.NotHyphenatedLowercase" />
+		<exclude name="WordPress.Files.FileName.InvalidClassFileName" />
 	</rule>
 	<rule ref="WordPress.NamingConventions.ValidHookName">
 		<properties>
