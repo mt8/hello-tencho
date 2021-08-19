@@ -10,6 +10,11 @@
         "wp-phpunit/wp-phpunit": "*",
         "phpunit/phpunit": "*"
     },
+    "autoload": {
+      "psr-4": {
+        "mt8\\Hello_Tencho\\" : "includes/"
+      }
+    },
     "scripts": {
       "php-format" : "phpcbf --standard=./.phpcs.xml.dist --report-summary --report-source",
       "php-lint"   : "phpcs --standard=./.phpcs.xml.dist",

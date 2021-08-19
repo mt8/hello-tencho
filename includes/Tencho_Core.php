@@ -1,22 +1,22 @@
 <?php
 
-namespace mt8;
+namespace mt8\Hello_Tencho;
 
 /**
- * Hello Tencho
+ * Tencho Core
  */
-class Hello_Tencho {
+class Tencho_Core {
 
 	private static $singleton;
 
 	/**
 	 * Get instance
 	 *
-	 * @return Hello_Tencho
+	 * @return mt8\Hello_Tencho\Tencho_Core
 	 */
 	public static function get_instance() {
 		if ( ! isset( self::$singleton ) ) {
-			self::$singleton = new Hello_Tencho();
+			self::$singleton = new Tencho_Core();
 		}
 		return self::$singleton;
 	}

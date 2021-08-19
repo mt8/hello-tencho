@@ -12,8 +12,9 @@ Version: 1.0.0
 Author URI: https://mt8.biz/
 */
 
-use mt8\Hello_Tencho;
 
-require __DIR__ . '/includes/class-hello-tencho.php';
+require_once __DIR__ . '/vendor/autoload.php';
 
-Hello_Tencho::get_instance()->register_hooks();
+if ( class_exists( '\mt8\Hello_Tencho\Tencho_Core' ) ) {
+	\mt8\Hello_Tencho\Tencho_Core::get_instance()->register_hooks();
+}

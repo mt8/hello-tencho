@@ -1,16 +1,16 @@
 <?php
 
-use mt8\Hello_Tencho;
+use mt8\Hello_Tencho\Tencho_Core;
 
 class Hello_Tencho_Test extends \WP_UnitTestCase {
 
 	public function test_tencho_words() {
 
-		$words = Hello_Tencho::get_instance()->get_words();
+		$words = Tencho_Core::get_instance()->get_words();
 
 		$this->assertNotEmpty( $words );
 
-		$chosen_words = Hello_Tencho::get_instance()->get_chosen_words();
+		$chosen_words = Tencho_Core::get_instance()->get_chosen_words();
 
 		$this->assertNotEmpty( $chosen_words );
 
