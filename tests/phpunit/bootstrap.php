@@ -14,3 +14,5 @@
 	define( 'WP_TESTS_CONFIG_FILE_PATH', __DIR__ . '/tmp/wp-tests-config.php' );
 	require 'tmp/includes/functions.php';
 	require 'tmp/includes/bootstrap.php';
+
+	require dirname( dirname( dirname( __FILE__ ) ) ) . '/hello-tencho.php';

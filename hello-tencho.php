@@ -12,8 +12,8 @@ Version: 1.0.0
 Author URI: https://mt8.biz/
 */
 
-use mt8;
+use mt8\Hello_Tencho;
 
 require __DIR__ . '/includes/class-hello-tencho.php';
 
-mt8\Hello_Tencho::get_instance()->register_hooks();
+Hello_Tencho::get_instance()->register_hooks();

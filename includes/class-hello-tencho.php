@@ -37,7 +37,7 @@ class Hello_Tencho {
 	 * @return void
 	 */
 	public function admin_head() {
-		$chosen = $this->get_words();
+		$chosen = $this->get_chosen_words();
 		$lang   = '';
 		if ( 'en_' !== substr( get_user_locale(), 0, 3 ) ) {
 			$lang = ' lang="en"';
@@ -89,7 +89,7 @@ class Hello_Tencho {
 	 * @return string Tencho words.
 	 */
 	public function get_words() {
-		$words = "Hi Tencho, I'm Tencho and I'm always selling mangoes.
+		return "Hi Tencho, I'm Tencho and I'm always selling mangoes.
 		Do you like red mangoes? Or do you like green mangoes?
 		Mangoes can only be harvested in the summer.
 		I take good care of the mangoes I harvest.
@@ -100,11 +100,23 @@ class Hello_Tencho {
 		After eating a delicious mango, try planting the seeds.
 		Ah, mangoes. Ah, mangoes.";
 
+	}
+
+	/**
+	 * Get Tencho words
+	 *
+	 * @return string Chosen Tencho words.
+	 */
+	public function get_chosen_words() {
+
+		$words = $this->get_words();
+
 		// Here we split it into lines.
 		$words = explode( "\n", $words );
 
 		// And then randomly choose a line.
 		return wptexturize( $words[ mt_rand( 0, count( $words ) - 1 ) ] );
+
 	}
 
 }
