@@ -14,15 +14,15 @@ Author URI: https://mt8.biz/
 
 function hello_tencho_get_words() {
 	/** These are the words to Hello Tencho */
-	$words = "Hi Tencho, I'm Tencho and I'm always selling mangoes. 
-	Do you like red mangoes? Or do you like green mangoes? 
-	Mangoes can only be harvested in the summer. 
-	I take good care of the mangoes I harvest. 
-	Do not put the mangoes in the refrigerator right away. 
-	The ripening process is very important for mangoes. 
-	When they change color and smell sweet, it is a sign that they are fully ripe. 
-	If you suddenly put them in the refrigerator, the ripening process will stop. 
-	After eating a delicious mango, try planting the seeds. 
+	$words = "Hi Tencho, I'm Tencho and I'm always selling mangoes.
+	Do you like red mangoes? Or do you like green mangoes?
+	Mangoes can only be harvested in the summer.
+	I take good care of the mangoes I harvest.
+	Do not put the mangoes in the refrigerator right away.
+	The ripening process is very important for mangoes.
+	When they change color and smell sweet, it is a sign that they are fully ripe.
+	If you suddenly put them in the refrigerator, the ripening process will stop.
+	After eating a delicious mango, try planting the seeds.
 	Ah, mangoes. Ah, mangoes.";
 
 	// Here we split it into lines.

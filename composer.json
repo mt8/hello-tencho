@@ -11,9 +11,8 @@
         "phpunit/phpunit": "*"
     },
     "scripts": {
-      "test": "phpunit",
-      "format": "phpcbf --standard=./.phpcs.xml --report-summary --report-source",
-      "lint": "phpcs --standard=./.phpcs.xml",
-      "phpcs": "phpcs --standard=./.phpcs.xml"
+      "php-format" : "phpcbf --standard=./.phpcs.xml.dist --report-summary --report-source",
+      "php-lint"   : "phpcs --standard=./.phpcs.xml.dist",
+      "test-php-unit": "wp-env run phpunit 'phpunit -c /var/www/html/wp-content/plugins/hello-tencho/phpunit.xml.dist --verbose'"
     }
 }
