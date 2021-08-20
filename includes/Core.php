@@ -5,18 +5,18 @@ namespace mt8\Hello_Tencho;
 /**
  * Tencho Core
  */
-class Tencho_Core {
+class Core {
 
 	private static $singleton;
 
 	/**
 	 * Get instance
 	 *
-	 * @return Tencho_Core
+	 * @return Core
 	 */
 	public static function get_instance() {
 		if ( ! isset( self::$singleton ) ) {
-			self::$singleton = new Tencho_Core();
+			self::$singleton = new Core();
 		}
 		return self::$singleton;
 	}

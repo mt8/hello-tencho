@@ -15,10 +15,12 @@ Author URI: https://mt8.biz/
 
 require_once __DIR__ . '/vendor/autoload.php';
 
-if ( class_exists( '\mt8\Hello_Tencho\Tencho_Core' ) ) {
-	\mt8\Hello_Tencho\Tencho_Core::get_instance()->register_hooks();
+if ( class_exists( '\mt8\Hello_Tencho\Core' ) ) {
+	\mt8\Hello_Tencho\Core::get_instance()->register_hooks();
 }
 
 if ( defined( 'WP_CLI' ) && WP_CLI ) {
-	\WP_CLI::add_command( 'tencho', \mt8\Hello_Tencho\Tencho_CLI::class );
+	if ( class_exists( '\mt8\Hello_Tencho\WP_CLI' ) ) {
+		\WP_CLI::add_command( 'tencho', \mt8\Hello_Tencho\WP_CLI::class );
+	}
 }
