@@ -12,6 +12,9 @@ Version: 1.0.0
 Author URI: https://mt8.biz/
 */
 
+if ( ! defined( 'WPINC' ) ) {
+	die;
+}
 
 require_once __DIR__ . '/vendor/autoload.php';
 
