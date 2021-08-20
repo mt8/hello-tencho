@@ -2,7 +2,7 @@
 
 use mt8\Hello_Tencho\Tencho_Core;
 
-class Hello_Tencho_Test extends \WP_UnitTestCase {
+class Tencho_Core_Test extends \WP_UnitTestCase {
 
 	public function test_tencho_words() {
 

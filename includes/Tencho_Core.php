@@ -12,7 +12,7 @@ class Tencho_Core {
 	/**
 	 * Get instance
 	 *
-	 * @return mt8\Hello_Tencho\Tencho_Core
+	 * @return Tencho_Core
 	 */
 	public static function get_instance() {
 		if ( ! isset( self::$singleton ) ) {
@@ -90,15 +90,15 @@ class Tencho_Core {
 	 */
 	public function get_words() {
 		return "Hi Tencho, I'm Tencho and I'm always selling mangoes.
-		Do you like red mangoes? Or do you like green mangoes?
-		Mangoes can only be harvested in the summer.
-		I take good care of the mangoes I harvest.
-		Do not put the mangoes in the refrigerator right away.
-		The ripening process is very important for mangoes.
-		When they change color and smell sweet, it is a sign that they are fully ripe.
-		If you suddenly put them in the refrigerator, the ripening process will stop.
-		After eating a delicious mango, try planting the seeds.
-		Ah, mangoes. Ah, mangoes.";
+Do you like red mangoes? Or do you like green mangoes?
+Mangoes can only be harvested in the summer.
+I take good care of the mangoes I harvest.
+Do not put the mangoes in the refrigerator right away.
+The ripening process is very important for mangoes.
+When they change color and smell sweet, it is a sign that they are fully ripe.
+If you suddenly put them in the refrigerator, the ripening process will stop.
+After eating a delicious mango, try planting the seeds.
+Ah, mangoes. Ah, mangoes.";
 
 	}
 
