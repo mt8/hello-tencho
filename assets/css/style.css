@@ -1,0 +1,21 @@
+#tencho {
+	float: right;
+	padding: 5px 10px;
+	margin: 0;
+	font-size: 12px;
+	line-height: 1.6666;
+}
+.rtl #tencho {
+	float: left;
+}
+.block-editor-page #tencho {
+	display: none;
+}
+@media screen and (max-width: 782px) {
+	#tencho,
+	.rtl #tencho {
+		float: none;
+		padding-left: 0;
+		padding-right: 0;
+	}
+}

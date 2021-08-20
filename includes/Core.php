@@ -28,7 +28,7 @@ class Core {
 	 */
 	public function register_hooks() {
 		add_action( 'admin_head', [ $this, 'admin_head' ] );
-		add_action( 'admin_notices', [ $this, 'admin_notices' ] );
+		add_action( 'admin_enqueue_scripts', [ $this, 'admin_enqueue_scripts' ] );
 	}
 
 	/**
@@ -45,36 +45,12 @@ class Core {
 	}
 
 	/**
-	 * Action for `admin_notices`
+	 * Action for `admin_enqueue_scripts`
 	 *
 	 * @return void
 	 */
-	public function admin_notices() {
-		echo "
-		<style type='text/css'>
-		#tencho {
-			float: right;
-			padding: 5px 10px;
-			margin: 0;
-			font-size: 12px;
-			line-height: 1.6666;
-		}
-		.rtl #tencho {
-			float: left;
-		}
-		.block-editor-page #tencho {
-			display: none;
-		}
-		@media screen and (max-width: 782px) {
-			#tencho,
-			.rtl #tencho {
-				float: none;
-				padding-left: 0;
-				padding-right: 0;
-			}
-		}
-		</style>
-		";
+	public function admin_enqueue_scripts() {
+		wp_enqueue_style( 'hello-tencho-style', plugins_url( '/assets/css/style.css', dirname( __FILE__ ) ) );
 	}
 
 	/**
