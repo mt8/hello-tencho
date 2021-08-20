@@ -5,7 +5,7 @@ namespace mt8\Hello_Tencho;
 /**
  * Tencho Core
  */
-class Tencho_CLI extends \WP_CLI_Command {
+class WP_CLI extends \WP_CLI_Command {
 
 	public function hello() {
 
