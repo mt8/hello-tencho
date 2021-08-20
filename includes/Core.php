@@ -38,14 +38,8 @@ class Core {
 	 */
 	public function admin_head() {
 		$chosen = $this->get_chosen_words();
-		$lang   = '';
-		if ( 'en_' !== substr( get_user_locale(), 0, 3 ) ) {
-			$lang = ' lang="en"';
-		}
 		printf(
-			'<p id="tencho"><span class="screen-reader-text">%s </span><span dir="ltr"%s>%s</span></p>',
-			__( 'Quote from Hello Tencho wards, by Motohachi:', 'hello-tencho' ),
-			$lang,
+			'<p id="tencho">%s</p>',
 			$chosen
 		);
 	}

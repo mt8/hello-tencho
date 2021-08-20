@@ -10,6 +10,7 @@ phpcs.xml
 phpunit.xml
 wp-cli.local.yml
 
+artifacts/
 *.sql
 *.tar.gz
 *.zip
