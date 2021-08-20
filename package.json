@@ -1,0 +1,25 @@
+{
+  "name": "hello-tencho",
+  "version": "1.0.0",
+  "description": "=== Hello Tencho === Contributors: mt8biz Stable tag: 1.0.0 Tested up to: 5.8 Requires at least: 4.7",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test:e2e": "node ./tests/e2e/run-tests.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mt8/hello-tencho.git"
+  },
+  "author": "mt8",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/mt8/hello-tencho/issues"
+  },
+  "homepage": "https://github.com/mt8/hello-tencho#readme",
+  "devDependencies": {
+    "@wordpress/e2e-test-utils": "^5.4.1",
+    "@wordpress/scripts": "^17.1.0"
+  }
+}
