@@ -21,8 +21,9 @@ jobs:
           - php: 7.4
             wp: trunk
             experimental: true
-          - php: 7.4
-            wp: latest
+          - php: 7.3
+            wp: trunk
+            experimental: true
     steps:
       - name: Checkout
         uses: actions/checkout@master
