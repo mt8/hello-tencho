@@ -64,7 +64,7 @@ jobs:
         run: composer lint-php
 
       - name: Install WP Tests
-        run: bash tests/phpunit/install-wp-tests.sh wordpress_test root root 127.0.0.1 ${{ matrix.wp }} true
+        run: bash tests/phpunit/install-wp-tests.sh wordpress_test root root 127.0.0.1 ${{ matrix.wp }} true false
 
       - name: phpunit tests
         run: |
