@@ -19,7 +19,11 @@
       "format-php"     : "phpcbf --standard=./.phpcs.xml.dist --report-summary --report-source",
       "lint-php"       : "phpcs --standard=./.phpcs.xml.dist",
       "setup-php-unit" : "sh tests/phpunit/setup.wp-env.sh tests-wordpress root password tests-mysql",
-      "test-php-unit"  : "wp-env run phpunit 'phpunit -c /var/www/html/wp-content/plugins/hello-tencho/tests/phpunit/phpunit.xml.dist --verbose'",
-      "test-e2e"       : "npm run test:e2e"
+      "phpunit"        : "wp-env run phpunit 'phpunit -c /var/www/html/wp-content/plugins/hello-tencho/tests/phpunit/phpunit.xml.dist --verbose'",
+      "e2e"            : "npm run test:e2e",
+      "test" : [
+        "@phpunit",
+        "@e2e"
+      ]
     }
 }
