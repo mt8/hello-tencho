@@ -68,5 +68,5 @@ jobs:
 
       - name: phpunit tests
         run: |
-          composer phpunit
-          WP_MULTISITE=1 composer phpunit
+          phpunit -c tests/phpunit/phpunit.xml.dist
+          WP_MULTISITE=1 phpunit -c tests/phpunit/phpunit.xml.dist
