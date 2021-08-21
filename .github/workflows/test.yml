@@ -58,7 +58,7 @@ jobs:
           key: composer-${{ hashFiles('composer.lock') }}
 
       - name: Composer install
-        run: composer install --optimize-autoloader --prefer-dist
+        run: composer install --optimize-autoloader --prefer-dist --no-suggest
 
       - name: Coding Style check
         run: composer lint-php
