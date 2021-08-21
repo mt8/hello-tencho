@@ -18,7 +18,7 @@
     "scripts": {
       "format-php"     : "phpcbf --standard=./.phpcs.xml.dist --report-summary --report-source",
       "lint-php"       : "phpcs --standard=./.phpcs.xml.dist",
-      "setup-phpunit"  : "sh tests/phpunit/install-wp-tests.sh tests-wordpress root password tests-mysql '' true true",
+      "setup-phpunit"  : "bash tests/phpunit/install-wp-tests.sh tests-wordpress root password tests-mysql '' true true",
       "phpunit"        : "wp-env run phpunit 'phpunit -c /var/www/html/wp-content/plugins/hello-tencho/tests/phpunit/phpunit.xml.dist --verbose'",
       "e2e"            : "npm run test:e2e",
       "test" : [

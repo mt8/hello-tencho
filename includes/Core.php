@@ -54,7 +54,7 @@ Ah, mangoes. Ah, mangoes.';
 		$chosen = $this->get_chosen_words();
 		printf(
 			'<p id="tencho">%s</p>',
-			esc_html( $chosen )
+			$chosen
 		);
 	}
 
