@@ -8,7 +8,8 @@
         "squizlabs/php_codesniffer": "*",
         "humanmade/coding-standards": "*",
         "wp-phpunit/wp-phpunit": "*",
-        "phpunit/phpunit": "*"
+        "phpunit/phpunit": "*",
+        "yoast/phpunit-polyfills": "^1.0"
     },
     "autoload": {
       "psr-4": {
