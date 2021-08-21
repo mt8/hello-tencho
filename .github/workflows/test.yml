@@ -21,9 +21,18 @@ jobs:
           - php: 7.4
             wp: trunk
             experimental: true
+          - php: 7.4
+            wp: latest
           - php: 7.3
             wp: trunk
             experimental: true
+          - php: 7.3
+            wp: latest
+          - php: 7.2
+            wp: trunk
+            experimental: true
+          - php: 7.2
+            wp: latest
     steps:
       - name: Checkout
         uses: actions/checkout@master
@@ -37,11 +46,6 @@ jobs:
 
       - name: Check PHP Version
         run: php -v
-
-#      - name: Install phpunit global
-#        run: |
-#          composer global require "phpunit/phpunit=7.*.*" --no-suggest
-#          phpunit --version
 
       - name: Cache composer packages
         uses: actions/cache@v2
