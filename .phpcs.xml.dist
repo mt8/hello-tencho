@@ -8,23 +8,23 @@
     <arg name="extensions" value="php"/>
     <arg name="parallel" value="8"/>
 	<rule ref="vendor/humanmade/coding-standards">
-		<exclude name="HM.Files.FunctionFileName.WrongFile" />
-		<exclude name="HM.Files.NamespaceDirectoryName" />
-		<exclude name="HM.Files.ClassFileName.MismatchedName" />
+		<exclude name="WordPress.Files.FileName.NotHyphenatedLowercase" />
+		<exclude name="WordPress.Files.FileName.InvalidClassFileName" />
 		<exclude name="WordPress.WP.CapitalPDangit.Misspelled" />
-		<exclude name="Squiz.Commenting.InlineComment.InvalidEndChar" />
 		<exclude name="Generic.Commenting.DocComment.LongNotCapital" />
-		<exclude name="Squiz.Commenting.FileComment.MissingPackageTag" />
+		<exclude name="Generic.Commenting.DocComment.ParamNotFirst" />
+		<exclude name="Squiz.Commenting.InlineComment.InvalidEndChar" />
 		<exclude name="Squiz.Commenting.FileComment.CopyrightTagOrder" />
-		<exclude name="Squiz.Commenting.FileComment.MissingSubpackageTag" />
 		<exclude name="Squiz.Commenting.FileComment.AuthorTagOrder" />
 		<exclude name="Squiz.Commenting.FileComment.MissingAuthorTag" />
 		<exclude name="Squiz.Commenting.FileComment.MissingCopyrightTag" />
-		<exclude name="Generic.Commenting.DocComment.ParamNotFirst" />
 		<exclude name="Squiz.Commenting.FileComment.PackageTagOrder" />
 		<exclude name="Squiz.Commenting.FileComment.SubpackageTagOrder" />
-		<exclude name="WordPress.Files.FileName.NotHyphenatedLowercase" />
-		<exclude name="WordPress.Files.FileName.InvalidClassFileName" />
+		<exclude name="Squiz.Commenting.FileComment.MissingPackageTag" />
+		<exclude name="Squiz.Commenting.FileComment.MissingSubpackageTag" />
+		<exclude name="HM.Files.FunctionFileName.WrongFile" />
+		<exclude name="HM.Files.NamespaceDirectoryName" />
+		<exclude name="HM.Files.ClassFileName.MismatchedName" />
 	</rule>
 	<rule ref="WordPress.NamingConventions.ValidHookName">
 		<properties>
