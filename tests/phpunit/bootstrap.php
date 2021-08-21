@@ -21,7 +21,7 @@
 
 	} else {
 
-		require dirname( __DIR__ ) . '/vendor/autoload.php';
+		require dirname( dirname( __DIR__ ) ) . '/vendor/autoload.php';
 
 		$_tests_dir = getenv( 'WP_TESTS_DIR' );
 
