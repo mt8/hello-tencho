@@ -16,10 +16,10 @@
       }
     },
     "scripts": {
-      "php-format" :   "phpcbf --standard=./.phpcs.xml.dist --report-summary --report-source",
-      "php-lint"   :   "phpcs --standard=./.phpcs.xml.dist",
-      "setup-php-unit": "sh tests/phpunit/setup.wp-env.sh tests-wordpress root password tests-mysql",
-      "test-php-unit": "wp-env run phpunit 'phpunit -c /var/www/html/wp-content/plugins/hello-tencho/phpunit.xml.dist --verbose'",
-      "test-e2e":      "npm run test:e2e"
+      "php-format"     : "phpcbf --standard=./.phpcs.xml.dist --report-summary --report-source",
+      "php-lint"       : "phpcs --standard=./.phpcs.xml.dist",
+      "setup-php-unit" : "sh tests/phpunit/setup.wp-env.sh tests-wordpress root password tests-mysql",
+      "test-php-unit"  : "wp-env run phpunit 'phpunit -c /var/www/html/wp-content/plugins/hello-tencho/phpunit.xml.dist --verbose'",
+      "test-e2e"       : "npm run test:e2e"
     }
 }

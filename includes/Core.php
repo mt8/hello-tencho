@@ -7,6 +7,9 @@ namespace mt8\Hello_Tencho;
  */
 class Core {
 
+	/**
+	 * Tencho Words
+	 */
 	public const TENCHO_WORDS = 'Hi Tencho, I\'m Tencho and I\'m always selling mangoes.
 Do you like red mangoes? Or do you like green mangoes?
 Mangoes can only be harvested in the summer.
@@ -79,15 +82,11 @@ Ah, mangoes. Ah, mangoes.';
 	 * @return string Chosen Tencho words.
 	 */
 	public function get_chosen_words() {
-
 		$words = $this->get_words();
-
 		// Here we split it into lines.
 		$words = explode( "\n", $words );
-
 		// And then randomly choose a line.
 		return wptexturize( $words[ mt_rand( 0, count( $words ) - 1 ) ] );
-
 	}
 
 }

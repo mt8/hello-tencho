@@ -3,7 +3,7 @@
 namespace mt8\Hello_Tencho;
 
 /**
- * Tencho Core
+ * Tencho CLI
  */
 class WP_CLI extends \WP_CLI_Command {
 
