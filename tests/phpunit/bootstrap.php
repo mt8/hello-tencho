@@ -5,7 +5,7 @@
 			'------------------------------' . PHP_EOL .
 			' There is no test suite.' . PHP_EOL .
 			' Please install test suite at first. ' . PHP_EOL .
-			' run `sh tests/phpunit/install-wp-tests-for-wp-env.sh tests-wordpress root password tests-mysql` on this plugin directly.' . PHP_EOL .
+			' run `composer setup-php-unit` on this plugin directly.' . PHP_EOL .
 			'------------------------------' . PHP_EOL
 		);
 		exit;
