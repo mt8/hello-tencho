@@ -5,7 +5,7 @@
 			'------------------------------' . PHP_EOL .
 			' There is no test suite.' . PHP_EOL .
 			' Please install test suite at first. ' . PHP_EOL .
-			' run `composer setup-php-unit` on this plugin directly.' . PHP_EOL .
+			' run `composer setup-phpunit` on this plugin directly.' . PHP_EOL .
 			'------------------------------' . PHP_EOL
 		);
 		exit;
@@ -15,4 +15,4 @@
 	require 'tmp/includes/functions.php';
 	require 'tmp/includes/bootstrap.php';
 
-	require dirname( dirname( dirname( __FILE__ ) ) ) . '/hello-tencho.php';
+	require dirname( dirname( dirname( __FILE__ ) ) ) . '/vendor/autoload.php';
