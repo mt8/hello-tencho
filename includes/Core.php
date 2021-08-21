@@ -10,7 +10,7 @@ class Core {
 	/**
 	 * Tencho Words
 	 */
-	public const TENCHO_WORDS = 'Hi Tencho, I\'m Tencho and I\'m always selling mangoes.
+	public const TENCHO_WORDS = 'Hi Tencho, Im Tencho and Im always selling mangoes.
 Do you like red mangoes? Or do you like green mangoes?
 Mangoes can only be harvested in the summer.
 I take good care of the mangoes I harvest.
