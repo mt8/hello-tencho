@@ -49,7 +49,7 @@ jobs:
 
       - name: Install phpunit global
         run: |
-          composer global require "phpunit/phpunit=5.7.*|6.*.*|7.*.*"
+          composer global require "phpunit/phpunit=5.7.*|6.*.*|7.*.*" --no-suggest
           phpunit --version
       - name: Cache composer packages
         uses: actions/cache@v2
