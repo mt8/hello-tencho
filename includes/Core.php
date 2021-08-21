@@ -11,13 +11,13 @@ class Core {
 	 * Tencho Words
 	 */
 	public const TENCHO_WORDS = 'Hi Tencho, Im Tencho and Im always selling mangoes.
-Do you like red mangoes? Or do you like green mangoes?
+Do you like red mangoes? Or green mangoes?
 Mangoes can only be harvested in the summer.
-I take good care of the mangoes I harvest.
+I take good care of the mangoes.
 Do not put the mangoes in the refrigerator right away.
 The ripening process is very important for mangoes.
 When they change color and smell sweet, it is a sign that they are fully ripe.
-If you suddenly put them in the refrigerator, the ripening process will stop.
+If you suddenly put mangoes in the refrigerator, they will stop ripening.
 After eating a delicious mango, try planting the seeds.
 Ah, mangoes. Ah, mangoes.';
 
