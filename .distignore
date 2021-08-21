@@ -8,6 +8,7 @@
 .git
 .gitignore
 .gitlab-ci.yml
+.github
 .travis.yml
 .DS_Store
 Thumbs.db
@@ -33,11 +34,11 @@ README.md
 webpack.config.js
 wp-cli.local.yml
 wp-env.json
+.wp-env.json
 yarn.lock
 tests
-vendor
 node_modules
 *.sql
 *.tar.gz
 *.zip
-artifascts
+artifacts
