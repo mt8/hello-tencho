@@ -2,10 +2,6 @@
 
 namespace mt8\Hello_Tencho;
 
-if ( ! defined( 'ABSPATH' ) ) {
-	exit; // Exit if accessed directly.
-}
-
 /**
  * Tencho CLI
  */
