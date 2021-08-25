@@ -21,6 +21,9 @@ If you suddenly put mangoes in the refrigerator, they will stop ripening.
 After eating a delicious mango, try planting the seeds.
 Ah, mangoes. Ah, mangoes.';
 
+	/**
+	 * @var Core Singleton
+	 */
 	private static $singleton;
 
 	/**

@@ -7,9 +7,10 @@
         "phpcompatibility/phpcompatibility-wp": "*",
         "squizlabs/php_codesniffer": "*",
         "humanmade/coding-standards": "*",
-        "wp-phpunit/wp-phpunit": "5.7.2",
-        "phpunit/phpunit": "7.5.20",
-        "yoast/phpunit-polyfills": "^1.0"
+        "wp-phpunit/wp-phpunit": "^5.8.0",
+        "phpunit/phpunit": "^8.5.19",
+        "yoast/phpunit-polyfills": "^1.0",
+        "szepeviktor/phpstan-wordpress": "^0.7.7"
     },
     "autoload": {
       "psr-4": {
@@ -22,9 +23,11 @@
       "setup-phpunit"  : "bash tests/phpunit/install-wp-tests.sh tests-wordpress root password tests-mysql '' true true",
       "phpunit"        : "wp-env run phpunit 'IS_WP_ENV=1 phpunit -c /var/www/html/wp-content/plugins/hello-tencho/tests/phpunit/phpunit.xml.dist --verbose'",
       "e2e"            : "npm run test:e2e",
+      "phpstan"        : "vendor/bin/phpstan analyse -c tests/phpstan/phpstan.neon.dist --memory-limit=1",
       "test" : [
         "@phpunit",
-        "@e2e"
+        "@e2e",
+        "phpstan"
       ]
     }
 }

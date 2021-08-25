@@ -8,9 +8,8 @@ namespace mt8\Hello_Tencho;
 class WP_CLI extends \WP_CLI_Command {
 
 	public function hello() {
-
-		\WP_CLI::line( Core::get_instance()->get_chosen_words() );
-
+		$cli = \WP_CLI::class;
+		$cli::line( Core::get_instance()->get_chosen_words() );
 	}
 
 }
