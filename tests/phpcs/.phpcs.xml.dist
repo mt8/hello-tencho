@@ -7,7 +7,7 @@
     <arg name="colors"/>
     <arg name="extensions" value="php"/>
     <arg name="parallel" value="8"/>
-	<rule ref="vendor/humanmade/coding-standards">
+	<rule ref="../../vendor/humanmade/coding-standards">
 		<exclude name="WordPress.Files.FileName.NotHyphenatedLowercase" />
 		<exclude name="WordPress.Files.FileName.InvalidClassFileName" />
 		<exclude name="WordPress.WP.CapitalPDangit.Misspelled" />
@@ -33,5 +33,5 @@
 	</rule>
 	<exclude-pattern>*/node_modules/*</exclude-pattern>
 	<exclude-pattern>*/vendor/*</exclude-pattern>
-	<exclude-pattern>/tests/*</exclude-pattern>
+	<exclude-pattern>../../tests/*</exclude-pattern>
 </ruleset>

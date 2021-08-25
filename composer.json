@@ -18,13 +18,14 @@
       }
     },
     "scripts": {
-      "format-php"     : "phpcbf --standard=./.phpcs.xml.dist --report-summary --report-source",
-      "lint-php"       : "phpcs --standard=./.phpcs.xml.dist",
+      "format-php"     : "phpcbf --standard=./tests/phpcs/.phpcs.xml.dist --report-summary --report-source",
+      "lint-php"       : "phpcs --standard=./tests/phpcs/.phpcs.xml.dist",
       "setup-phpunit"  : "bash tests/phpunit/install-wp-tests.sh tests-wordpress root password tests-mysql '' true true",
       "phpunit"        : "wp-env run phpunit 'IS_WP_ENV=1 phpunit -c /var/www/html/wp-content/plugins/hello-tencho/tests/phpunit/phpunit.xml.dist --verbose'",
       "e2e"            : "npm run test:e2e",
       "phpstan"        : "vendor/bin/phpstan analyse -c tests/phpstan/phpstan.neon.dist --memory-limit=1",
       "test" : [
+        "@lint-php",
         "@phpunit",
         "@e2e",
         "phpstan"
