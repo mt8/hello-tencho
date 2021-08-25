@@ -28,7 +28,7 @@
         "@lint-php",
         "@phpunit",
         "@e2e",
-        "phpstan"
+        "@phpstan"
       ]
     }
 }

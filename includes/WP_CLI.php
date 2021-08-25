@@ -2,6 +2,7 @@
 
 namespace mt8\Hello_Tencho;
 
+if ( class_exists( '\WP_CLI_Command' ) ) :
 /**
  * Tencho CLI
  */
@@ -13,3 +14,4 @@ class WP_CLI extends \WP_CLI_Command {
 	}
 
 }
+endif;
