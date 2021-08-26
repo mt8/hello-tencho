@@ -6,10 +6,6 @@ tests/phpunit/tmp/*
 vendor/
 node_modules/
 
-phpcs.xml
-phpunit.xml
-wp-cli.local.yml
-
 artifacts/
 *.sql
 *.tar.gz
