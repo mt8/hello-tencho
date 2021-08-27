@@ -4,7 +4,7 @@ tests/phpunit/tmp/*
 vendor/
 node_modules/
 artifacts/
-release/
+dist/
 *.sql
 *.tar.gz
 *.zip

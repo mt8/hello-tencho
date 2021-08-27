@@ -18,6 +18,7 @@
       }
     },
     "scripts": {
+      "create-release" : "bash bin/create-release",
       "format-php"     : "phpcbf --standard=./tests/phpcs/.phpcs.xml.dist --report-summary --report-source",
       "lint-php"       : "phpcs --standard=./tests/phpcs/.phpcs.xml.dist",
       "setup-phpunit"  : "bash tests/phpunit/install-wp-tests.sh tests-wordpress root password tests-mysql '' true true",

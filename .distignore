@@ -7,6 +7,7 @@ artifacts
 .DS_Store
 Thumbs.db
 node_modules
+bin
 tests
 .wp-env.json
 composer.json
@@ -18,4 +19,4 @@ README.md
 *.tar.gz
 *.zip
 *.log
-release
+dist
