@@ -4,7 +4,7 @@ tests/phpunit/tmp/*
 vendor/
 node_modules/
 artifacts/
-dist/
+hello-tencho/
 *.sql
 *.tar.gz
 *.zip

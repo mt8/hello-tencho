@@ -1,6 +1,6 @@
 #!/bin/sh
 
-RELEASE_DIR='./dist'
+RELEASE_DIR='./hello-tencho'
 
 if [ -d $RELEASE_DIR ]; then
 	rm -rf $RELEASE_DIR
