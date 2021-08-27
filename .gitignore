@@ -1,12 +1,10 @@
 .DS_Store
 Thumbs.db
-
 tests/phpunit/tmp/*
-
 vendor/
 node_modules/
-
 artifacts/
+release/
 *.sql
 *.tar.gz
 *.zip
