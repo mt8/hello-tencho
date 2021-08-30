@@ -5,6 +5,7 @@ vendor/
 node_modules/
 artifacts/
 hello-tencho/
+.wp-env.override.json
 *.sql
 *.tar.gz
 *.zip
