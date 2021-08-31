@@ -14,7 +14,7 @@ class FeatureContext implements Context
 		if ( '1' === getenv( 'IS_WP_ENV' ) ) {
 			exec( escapeshellcmd( 'wp-env run cli tencho hello' ), $this->output, $this->result_code );
 		} else {
-			exec( 'wp tencho hello --path=/tmp/wordpress', $this->output, $this->result_code );
+			exec( escapeshellcmd( 'wp tencho hello --path=/tmp/wordpress' ), $this->output, $this->result_code );
 		}
     }
 
