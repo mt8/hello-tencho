@@ -13,15 +13,16 @@
 			exit;
 		}
 
+		require dirname( dirname( dirname( __FILE__ ) ) ) . '/vendor/yoast/phpunit-polyfills/phpunitpolyfills-autoload.php';
+		require dirname( dirname( dirname( __FILE__ ) ) ) . '/vendor/autoload.php';
 		define( 'WP_TESTS_CONFIG_FILE_PATH', __DIR__ . '/tmp/wp-tests-config.php' );
 		require 'tmp/includes/functions.php';
 		require 'tmp/includes/bootstrap.php';
 
-		require dirname( dirname( dirname( __FILE__ ) ) ) . '/vendor/autoload.php';
-
 	} else {
 
-		require dirname( dirname( __DIR__ ) ) . '/vendor/autoload.php';
+		require dirname( dirname( __DIR__ ) ) . '/vendor/yoast/phpunit-polyfills/phpunitpolyfills-autoload.php';
+		require dirname( dirname( dirname( __FILE__ ) ) ) . '/vendor/autoload.php';
 
 		$_tests_dir = getenv( 'WP_TESTS_DIR' );
 
