@@ -8,8 +8,7 @@
         "squizlabs/php_codesniffer": "*",
         "humanmade/coding-standards": "*",
         "wp-phpunit/wp-phpunit": "^5.4",
-        "phpunit/phpunit": "^5.7|^6",
-        "yoast/phpunit-polyfills": "^1.0",
+        "yoast/phpunit-polyfills": "^1.0.1",        
         "szepeviktor/phpstan-wordpress": "^0.7.7",
         "behat/behat": "^3.8"
     },
